@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "{{ url_for('static', filename='pics/serum/1.jpg') }}" width="300" alt = "treatment">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static', filename='pics/serum/2.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static', filename='pics/serum/3.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static', filename='pics/serum/4.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">Shine & Smooth Hair Serum</h2>
+            <div class = "product-price">
+            <p class = "new-price">Price: <span>Rs. 750.00 (50 ML)</span></p>
+            </div>
+
+            <div class = "product-detail">
+            <h2>product details: </h2>
+            <p>U Professional Shine & Smooth Serum Feels Smooth! For an ultra-sleek shiny finish this polishing frizz resist formula instantly seals silky smoothness in hair & improves manageability with long-lasting gloss. Keeps hair shiny & manageable all day.</p>
+            <ul>Sizes Available:
+                <li>50 ML</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock content %}

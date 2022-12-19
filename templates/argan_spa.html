@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "{{ url_for('static', filename='pics/argan_spa/3.jpg') }}" width="300" alt = "treatment">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static', filename='pics/argan_spa/1.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static', filename='pics/argan_spa/2.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static', filename='pics/argan_spa/4.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">Luxury Argan Oil Hair Spa</h2>
+            <div class = "product-price">
+            <p class = "new-price">Price: <span>Rs. 1350.00 (500 ML)</span></p>
+            </div>
+
+            <div class = "product-detail">
+            <h2>product details: </h2>
+            <p>U Professional Moroccan Argan Oil Hair Spa combines the goodness of Moroccan Argan, proteins and vitamin B5 to lend extraordinary softness to your strands. Argan Oil, an old age beauty secret, provides protection to the hairs from UV damage and other environmental pollutants. It locks in moisture and hydrates the hair intensely and leaves them frizz-free, soft and manageable. It repairs and strengthens the most dry, damaged strands and brings them to life with silky protection.</p>
+            <ul>Sizes Available:
+                <li>500 ML</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock content %}

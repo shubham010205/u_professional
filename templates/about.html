@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="about-intro">
+        <h3>About Us</h3>
+        <div class="about-brand">
+        <h2>We are <strong>U Professional</strong></h2>
+        <h6>Here To Bring Out The Best In YOU!</h6>
+    </div>
+    <h5>U Professional is the Vision of Mrs <strong>Geeta Upreti</strong>, a Young Entrepreneur who has found It with the intention of introducing Good Quality Products in the Beauty Industry.</h5>
+
+    <div class="about">
+        <div class="text-about col-md-6">
+            <h4>Founder's Message</h4>
+            <p>The philosophy of our brand is to celebrate the diversity of all who come in contact with us. We believe that everyone has the right to express themselves in their own unique way. Our cruelty-free, sulfate-free & paraben-free products range caters to deliver the vision of uncompromised quality. We always strive for the best and most innovative products to give the best experience to our Customers.</p>
+        </div>
+        <div class="image-about">
+            <div class="card border-0">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="{{ url_for('static', filename='pics/founder.jpg') }}" class="img-fluid founder" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h3 class="card-title">Geeta Upreti</h3>
+                            <p class="card-text">Professional Make-Up Artist and Hair-Care Expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-mission">
+        <h4>Our Mission</h4>
+        <p>It is to offer all women and men the best beauty products in terms of quality, efficacy, safety and responsibility. With such strong foundations, we conceive and build an infinite diversity of beauty products and services in order to share the best of beauty with everyone, everywhere. We want to give our customers the confidence to show the world their inner beauty, style & personality. We encourage our consumers to fall in love with themselves, discover their inner magic and celebrate who they really are.</p>
+    </div>
+
+    <div class="about-principle">
+        <h4>Our Principles</h4>
+        <p>U Professional works on the principle of:</p>
+        <ul>
+            <li>Using only the pure and active form of ingredients in our products</li>
+            <li>Maintaining the high level of quality control and continuous R&D</li>
+            <li>To create a customer-friendly transparent policy & friendly atmosphere</li>
+            <li>To offer value for money to our consumers</li>
+            <li>Regularly training our employees for continuous improvement in the field and also to educate our consumers about our products and services</li>
+        </ul>
+    </div>
+
+    <div class="about-quality">
+        <h4>Our Products' Quality</h4>
+        <p>U Professional focuses on modernity and the development of its products is based on advanced active cosmetology, based on pure ingredients and special techniques, which offers you effective and visible results. The quality of products is managed by the best professionals.</p>
+    </div>
+{% endblock content %}

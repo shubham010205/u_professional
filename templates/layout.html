@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+      <title>U Professional</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <script src="https://kit.fontawesome.com/1d6ad1979a.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color: white;">
+      <nav class="navbar justify-content-center py-1">
+          <img class="img-fluid" src="{{ url_for('static', filename='pics/logo.png') }}" width="150" alt="">
+          <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" aria-current="page" href="{{ url_for('home') }}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" href="{{ url_for('about') }}">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Products</a>
+                <ul class="dropdown-menu">
+                  <nav>
+                    <li><a class="dropdown-item" href="#">Shampoo</a>
+                      <ul>
+                        <li><a href="{{ url_for('clarifying_shampoo') }}">Clarifying Shampoo</a></li>
+                        <li><a href="{{ url_for('haircare_shampoo') }}">Hair-Care Shampoo</a></li>
+                      </ul> 
+                    </li>
+                  </nav>
+                  <nav>
+                    <li><a class="dropdown-item" href="#">Hair-Mask</a>
+                      <ul>
+                        <li><a href="{{ url_for('hair_mask') }}">Mask</a></li>
+                        <li><a href="{{ url_for('argan_spa') }}">Argan Spa</a></li>
+                      </ul> 
+                    </li>
+                  </nav>
+                  <li><a class="dropdown-item" href="{{ url_for('treatment') }}">Treatment-Lotion</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('hair_serum') }}">Hair-Serums</a></li>
+                  <li><a class="dropdown-item" href="{{ url_for('dtan') }}">D-Tan Packs</a></li>
+                  <nav>
+                    <li><a class="dropdown-item" href="#">Hair-Cream</a>
+                      <ul>
+                        <li><a href="{{ url_for('smoothing') }}">Smoothing</a></li>
+                        <li><a href="{{ url_for('neutralizing') }}">Neutralizing</a></li>
+                      </ul> 
+                    </li>
+                  </nav>
+                  <nav>
+                    <li><a class="dropdown-item" href="#">Home Care</a>
+                      <ul>
+                        <li><a href="{{ url_for('homecare_shampoo') }}">Shampoo</a></li>
+                        <li><a href="{{ url_for('homecare_mask') }}">Mask</a></li>
+                      </ul> 
+                    </li>
+                  </nav>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navbar-brand" href="{{ url_for('contact') }}">Contact Us</a>
+              </li>
+          </ul>
+      </nav>
+      {% block content %}
+      {% endblock content %}
+      <div class="footer-dark col-12">
+        <footer class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="#">Hair Care</a></li>
+                            <li><a href="#">More to come ...</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="{{ url_for('about') }}">Company</a></li>
+                            <li><a href="{{ url_for('about') }}">Team</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>U Professional</h3>
+                        <p>Brings Out The Best In YOU!</p>
+                    </div>
+                    <div class="col item social">
+                        <a href="https://instagram.com/uprofessional.in?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100082346359196&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+                <!-- <p class="copyright">U Professional © 2022</p> -->
+            </div>
+        </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

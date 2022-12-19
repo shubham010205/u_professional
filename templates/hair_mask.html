@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "{{ url_for('static', filename='pics/haircare_mask/3.jpg') }}" width="300" alt = "treatment">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static', filename='pics/haircare_mask/1.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static', filename='pics/haircare_mask/2.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static', filename='pics/haircare_mask/4.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">Kera-Botox Hair Care Mask</h2>
+            <div class = "product-price">
+            <p class = "new-price">Price: <span>Rs. 1250.00 (500 ML)</span></p>
+            <p class = "new-price">Price: <span>Rs. 950.00 (300 ML)</span></p>
+            </div>
+
+            <div class = "product-detail">
+            <h2>product details: </h2>
+            <p>U Professional Kera Botox Hair Care Mask is designed to strengthen the hair follicles, nourishes the roots & revitalize the scalp that leads to new life in hair which is naturally fizzy, wavy/curly or chemically treated. Kera Botox Hair Mask locks moisture & at the same time strengthens the hair from fragile to strong.  Kera Botox Hair Mask is a unique combination of essential oils & our exclusive technology that hooks first time users to follow it as a regime. Designed to leave hair tangle free & gives a silky touch even after several hair washes. Kera botox Hair Mask does miracles on damaged & cover processed hair which are lifeless. Our personally curated hair spas will allow us to continue desired hair length and enjoy healthy hair. This mask breathers life into lifeless hair and strengthens with its rebirth formula.</p>
+            <ul>Sizes Available:
+                <li>300 ML</li>
+                <li>500 ML</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock content %}

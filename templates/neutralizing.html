@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "{{ url_for('static', filename='pics/neutralizing-smoothing/3.jpg') }}" width="300" alt = "treatment">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static', filename='pics/neutralizing-smoothing/4.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static', filename='pics/neutralizing-smoothing/1.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static', filename='pics/neutralizing-smoothing/2.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">Smoothing and Neutralizing</h2>
+            <p>(Pack of 2)</p>
+            <div class = "product-price">
+            <p class = "new-price">Price: <span>Rs. 1600.00 (500 ML)</span></p>
+            </div>
+
+            <div class = "product-detail">
+            <h2>product details: </h2>
+            <p>Smoothing cream is like a moisturizing lotion for your hair. It nourishes and rehydrates the hair strands, tames frizz, protects hair from heat and adds soft definition and glossy shine. Most smoothing creams are designed to be applied to damp, towel-dried hair before blow drying. Most smoothing creams are designed to be applied to damp, towel-dried hair before blow drying. The moisturizing ingredients make the hair easier to work with and create a luminous, glossy finish. Versatile smoothing and styling creams (like this one) can also be used to refresh dry hair and give second-day styles.</p>
+            <p>Smoothing creams work on all hair types, making this the perfect product for anyone who wants shiny, frizz-free hair.</p>
+            <ul>Sizes Available:
+                <li>500 ML</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock content %}

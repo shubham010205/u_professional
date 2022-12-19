@@ -1,0 +1,257 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='pics/logo_50.png') }}" class="rounded" alt="...">
+    </div>
+    <div class="container text-center">
+        <h1 class="product-details">Product card</h1>
+    </div>
+    <div class="shell">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/clarifying_shampoo.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Shampoo</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('clarifying_shampoo') }}">Clarifying Shampoo</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 1550</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/treatment.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Hair Lotion</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('treatment') }}">Treatment Lotion</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 16500</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/haircare_shampoo.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Shampoo</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('haircare_shampoo') }}">Hair Care Shampoo</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 2150</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/haircare_mask.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Hair Lotion</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('hair_mask') }}">Hair Care Mask</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 1250</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/serum.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Hair Lotion</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('hair_serum') }}">Hair Serum</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 750</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/argan_spa.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Hair Cream</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('argan_spa') }}">Argan Oil Hair Spa</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 1350</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/smoothing.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Hair Cream</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('smoothing') }}">Smoothing</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 1050</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/neutralizing.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Hair Cream</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('neutralizing') }}">Neutralizing</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 550</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/d_tan.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Pack</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('dtan') }}">D-Tan Pack</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 850</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/homecare_shampoo.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Shampoo</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('homecare_shampoo') }}">Homecare Shampoo</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 950</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wsk-cp-product">
+                    <div class="wsk-cp-img">
+                    <img src="{{ url_for('static', filename='pics/homecare_mask.jpg') }}" alt="Product" class="img-responsive"/>
+                    </div>
+                    <div class="wsk-cp-text">
+                        <div class="category">
+                        <span>Hair Mask</span>
+                        </div>
+                        <div class="title-product">
+                            <h3><a href="{{ url_for('hair_mask') }}">Hair Care Mask</a></h3>
+                        </div>
+                        <div class="description-prod">
+                            <p></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wcf-left"><span class="price">Rs. 1050</span></div>
+                            <!-- <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+{% endblock content %}

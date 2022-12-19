@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "{{ url_for('static', filename='pics/homecare_shampoo/4.jpg') }}" width="300" alt = "treatment">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static', filename='pics/homecare_shampoo/1.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static', filename='pics/homecare_shampoo/2.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static', filename='pics/homecare_shampoo/3.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">Kera-Botox Home Care Shampoo</h2>
+            <div class = "product-price">
+            <p class = "new-price">Price: <span>Rs. 950.00 (300 ML)</span></p>
+            </div>
+
+            <div class = "product-detail">
+            <h2>product details: </h2>
+            <p>Infused with all 9 essential amino acids to provide hair with moisture and strength, as well as repairing surface damage. They also help to build hair,add shine due to which hair looks smooth & silky. Amino Acids are the building blocks of protein and necessary for many of the structures and functions of our hair. Our hair needs 20 different amino acids to function on a daily basis. Our hair can produce 11 out of the 20 amino acids we need. The other 9 are called “essential amino acids” as it is essential, we need to consume them ourselves, whether this through food or products. U Professional Kera Botox premium shampoo contains these 9 essential amino acids,necessary to improve tensile strength and build natural keratin and collagen within the hair.</p>
+            <ul>Sizes Available:
+                <li>300 ML</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock content %}

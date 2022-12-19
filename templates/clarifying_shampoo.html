@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "{{ url_for('static', filename='pics/clarifying_shampoo/4.jpg') }}" width="300" alt = "treatment">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static', filename='pics/clarifying_shampoo/1.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static', filename='pics/clarifying_shampoo/2.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static', filename='pics/clarifying_shampoo/3.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">Kera-Botox Clarifying Shampoo</h2>
+            <div class = "product-price">
+            <p class = "new-price">Price: <span>Rs. 1550.00 (1000 ML)</span></p>
+            <p class = "new-price">Price: <span>Rs. 550.00 (300 ML)</span></p>
+            </div>
+
+            <div class = "product-detail">
+            <h2>product details: </h2>
+            <p>Think of clarifying shampoos as shampoos on steroids—they cut through product buildup and oils to leave your hair super-clean. "Clarifying shampoos are a type of cleansing shampoo specifically formulated to clear buildup and remove the residue of styling products. If you’ve ever had a salon relaxer or keratin treatment done, you’ve probably had one used on you (both treatments perform better on ruthlessly clean hair).</p>
+            <ul>Sizes Available:
+                <li>300 ML</li>
+                <li>1000 ML</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock content %}

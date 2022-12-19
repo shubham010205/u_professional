@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class = "card-wrapper">
+        <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+            <div class = "img-display">
+            <div class = "img-showcase">
+                <img src = "{{ url_for('static', filename='pics/treatment/4.jpg') }}" width="300" alt = "treatment">
+            </div>
+            </div>
+            <div class = "img-select">
+            <div class = "img-item">
+                <a href = "#" data-id = "1">
+                <img src = "{{ url_for('static', filename='pics/treatment/1.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "2">
+                <img src = "{{ url_for('static', filename='pics/treatment/2.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            <div class = "img-item">
+                <a href = "#" data-id = "3">
+                <img src = "{{ url_for('static', filename='pics/treatment/3.jpg') }}" width="200" alt = "shoe image">
+                </a>
+            </div>
+            </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+            <h2 class = "product-title">Kera-Botox Treatment Lotion</h2>
+            <div class = "product-price">
+            <p class = "new-price">Price: <span>Rs. 16,500.00 (1000 ML)</span></p>
+            <p class = "new-price">Price: <span>Rs. 5,500.00 (300 ML)</span></p>
+            </div>
+
+            <div class = "product-detail">
+            <h2>product details: </h2>
+            <p>Keratin is the type of protein that makes up your hair, skin, and nails. Keratin can also be found in your internal organs and glands. Keratin is a protective protein, less prone to scratching or tearing than other types of cells your body produces.</p>
+            <p>Keratin can be derived from the feathers, horns, and wool of different animals and used as an ingredient in hair cosmetics. Since keratin is the structural building block of your hair, some people believe that keratin supplements, products, and treatments can help strengthen your hair and make it look healthier.</p>
+            <p>People who use keratin on their hair report that their hair is smoother and easier to manage as a result. The effects vary greatly depending on whether your hair is healthy to begin with, what the natural thickness of your hair is, and what kind of keratin treatment you use. Keratin works by smoothing down the cells that overlap to form your hair strands. The layers of cells, called the hair cuticle, theoretically absorb the keratin, resulting in hair that looks full and glossy. Keratin also claims to make curly hair less frizzy, easier to style, and straighter in appearance.</p>
+            <ul>Sizes Available:
+                <li>300 ML</li>
+                <li>1000 ML</li>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock content %}
