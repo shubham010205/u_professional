@@ -2,16 +2,20 @@ body {
     background-color: black;
 }
 
-.text-center {
-    background-color: white;
+
+.text-center rounded {
+    background-color: #ffffff;
+    width: fit-content;
+    height: fit-content;
 }
 
 .centered {
+    top: 10%;
+    width: fit-content;
+    height: fit-content;
     position: absolute;
-    top: 35%;
-    left: 10%;
-    font-size: 120px;
-    font-weight: 600;
+    font-size: 65px;
+    font-weight: 500;
 }
 
 span {
@@ -19,9 +23,11 @@ span {
 }
 
 .welcome-anchor {
+    width: fit-content;
+    height: fit-content;
     position: absolute;
-    top: 60%;
-    left: 45%;
+    left: 25%;
+    top: 50%;
 }
 
 .img-fluid {
@@ -232,6 +238,7 @@ margin: 0 5px;
 
 
 .about {
+    width: fit-content;
     margin-top: 3%;
     display: flex;
     align-items: center;
